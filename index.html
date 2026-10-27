@@ -1,36 +1,28 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
+<!-- Text between angle brackets is an HTML tag and is not displayed.
+Most tags, such as the HTML and /HTML tags that surround the contents of
+a page, come in pairs; some tags, like HR, for a horizontal rule, stand 
+alone. Comments, such as the text you're reading, are not displayed when
+the Web page is shown. The information between the HEAD and /HEAD tags is 
+not displayed. The information between the BODY and /BODY tags is displayed.-->
 <head>
-<meta charset="utf-8">
-<title>Test sample</title>
-<link rel="icon" href="/favicon.ico">
-<style>
-body {
-    font-family:Verdana;
-    color: #333;
-    padding:100px;
-}
-.testClass{
-    background-color:orange;
-}
-</style>
+<title>Enter a title, displayed at the top of the window.</title>
 </head>
-
-<!--This is a default HTML sample.-->
-
+<!-- The information between the BODY and /BODY tags is displayed.-->
 <body>
-<div class="testClass" onclick="clickMe()">
-You see a preview of the default HTML sample.
-<br>
-Click me to test the JavaScript functionality.
-</div>
-<script type="text/javascript">
-function clickMe()
-{
-var testClassDiv = document.getElementsByClassName("testClass")[0];
-var testText = testClassDiv.innerHTML;
-testClassDiv.innerHTML = testText.replace(/click me.+?functionality/i, "I was clicked, the JavaScript is working");
-}
-</script>
+<h1>Enter the main heading, usually the same as the title.</h1>
+<p>Be <b>bold</b> in stating your key points. Put them in a list: </p>
+<ul>
+<li>The first item in your list</li>
+<li>The second item; <i>italicize</i> key words</li>
+</ul>
+<p>Improve your image by including an image. </p>
+<p><img src="http://www.mygifs.com/CoverImage.gif" alt="A Great HTML Resource"></p>
+<p>Add a link to your favorite <a href="https://www.dummies.com/">Web site</a>.
+Break up your page with a horizontal rule or two. </p>
+<hr>
+<p>Finally, link to <a href="page2.html">another page</a> in your own Web site.</p>
+<!-- And add a copyright notice.-->
+<p>© Wiley Publishing, 2011</p>
 </body>
 </html>
